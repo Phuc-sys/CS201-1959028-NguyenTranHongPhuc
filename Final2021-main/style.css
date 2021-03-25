@@ -1,0 +1,94 @@
+h1, h2, h3, nav li {
+  font-family: 'Kiwi Maru', serif;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  margin: 0 200px;
+}
+.carousel-inner{
+  height: 60vh;
+}
+.fa, .fas {
+    font-weight: 900;
+    color: #ff4700;
+    font-size: -webkit-xxx-large;
+}
+.card{
+  height: 100%;
+}
+.card-text{
+      color: crimson;
+}
+.avaiable:hover{
+  cursor: pointer;
+}
+.flip-card {
+  background-color: transparent;
+  width: 315px;
+  height: 242px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 11px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #f04d4d;
+    color: white;
+    padding-top: 18px;
+}
+.flip-card-front img {
+    padding-bottom: 10px;
+    width: 90px;
+}
+.flip-card-front h4{
+    font-weight: 100;
+    font-size: larger;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #673ab7;
+    color: white;
+    padding: 73px 18px;
+  transform: rotateY(180deg);
+}
+.flip{
+  margin-left: 8vw;
+}
+.logo-brand{
+  margin-top: 13vh;
+}
+footer{
+  height: 30vh;
+}
+footer ul li a{
+  text-decoration: none;
+  list-style: none;
+}
